@@ -10,6 +10,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="cv.css" />
+
+    <script type="text/javascript">
+
+      window.onload = () => {
+        let today = new Date();
+        let year = today.getFullYear();
+        const name = 'Emanuel';
+        const lastname = 'Pontoni';
+        var age = year - 1992;
+
+        document.getElementById('myAge').innerHTML = age;
+      }
+      
+    </script>
   </head>
   <body>
     <div id="title">
@@ -23,7 +37,7 @@
       <div class="col-2">
         <h3>¿Quién soy?</h3>
         <p>
-          Mi nombre es Emanuel Pontoni, tengo 28 años y vivo en la ciudad de Río
+          Mi nombre es Emanuel Pontoni, tengo <span id="myAge"></span> años y vivo en la ciudad de Río
           Cuarto, Córdoba, Rep. Argentina.
         </p>
         <h3>Formación Académica</h3>
